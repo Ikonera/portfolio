@@ -1,15 +1,6 @@
-import React, { FunctionComponent } from "react"
+import React from "react"
 import ReactDOM from "react-dom"
-
-
-const App: FunctionComponent = () =>
-{
-    return (
-        <div>
-            Hello world
-        </div>
-    )
-}
+import App from "./app"
 
 
 ReactDOM.render(

@@ -1,7 +1,7 @@
 {
-  "name": "tspack_conf",
+  "name": "portfolio",
   "version": "0.1.0",
-  "description": "Webpack config with TS & React",
+  "description": "Portfolio website from MILLET Gabriel.",
   "scripts": {
     "dev": "webpack serve --open",
     "watch": "webpack --watch",
@@ -9,31 +9,34 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ikonera/tspack_conf.git"
+    "url": "git+https://github.com/Ikonera/portfolio.git"
   },
-  "author": "Ikonera",
+  "author": "MILLET Gabriel",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ikonera/tspack_conf/issues"
+    "url": "https://github.com/Ikonera/portfolio/issues"
   },
-  "homepage": "https://github.com/Ikonera/tspack_conf#readme",
+  "homepage": "https://github.com/Ikonera/portfolio#readme",
   "devDependencies": {
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.2",
     "@types/react-router-dom": "^5.1.7",
     "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^5.0.1",
-    "html-webpack-plugin": "^4.5.1",
+    "css-loader": "^5.1.3",
+    "html-webpack-plugin": "^5.3.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
-    "sass": "^1.32.5",
-    "sass-loader": "^10.1.1",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
-    "ts-loader": "^8.0.14",
-    "typescript": "^4.1.3",
-    "webpack": "^5.17.0",
-    "webpack-cli": "^4.4.0",
+    "ts-loader": "^8.0.18",
+    "typescript": "^4.2.3",
+    "webpack": "^5.27.0",
+    "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.3"
   }
 }
