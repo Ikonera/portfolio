@@ -6,21 +6,25 @@ import { Link } from "react-router-dom"
 const Header: FunctionComponent = () =>
 {
 	return (
-		<AppBar position="static">
-			<div>
-				<p>
-					Header works !
-				</p>
-				<li>
-					<Link to='/' >Home</Link>
-				</li>
-				<li>
-					<Link to="/contact" >Contact</Link>
-				</li>
-				<li>
-					<Link to="/projects" >Projects</Link>
-				</li>
-			</div>
+		<AppBar position="static" color="primary">
+			<header>
+				<div>
+					<h2>
+						Gabriel MILLET
+					</h2>
+				</div>
+				<nav>
+					<li>
+						<Link to='/'>Home</Link>
+					</li>
+					<li>
+						<Link to="/contact">Contact</Link>
+					</li>
+					<li>
+						<Link to="/projects">Projects</Link>
+					</li>
+				</nav>
+			</header>
 		</AppBar>
 	)
 }

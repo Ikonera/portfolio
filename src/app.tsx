@@ -3,6 +3,7 @@ import "./master.sass"
 
 import Content from "./Components/Content/content.component"
 import Header from "./Components/Header/header.component"
+import Footer from "./Components/Footer/footer.component"
 
 
 const App: FunctionComponent = () =>
@@ -11,6 +12,7 @@ const App: FunctionComponent = () =>
 		<>
 			<Header />
 			<Content />
+			{/* <Footer /> */}
 		</>
 	)
 }

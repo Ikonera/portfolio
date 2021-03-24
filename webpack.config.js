@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 const { DefinePlugin } = require("webpack")
 
-const APP_NAME = "Gabriel MILLET - portfolio"
+const APP_NAME = "Gabriel MILLET"
 
 module.exports = {
 	mode: "development",
@@ -26,9 +26,9 @@ module.exports = {
 	resolve: {
 		extensions: [".tsx", ".ts", ".js"],
 		alias: {
-			Components: path.resolve(__dirname, "src/Components/"),
+			Components: path.resolve(__dirname, "src/Components"),
 			Interfaces: path.resolve(__dirname, "src/Interfaces"),
-			Assets: path.resolve(__dirname, "public/assets"),
+			Assets: path.resolve(__dirname, "src/Assets"),
 		}
 	},
 	module: {
@@ -41,7 +41,11 @@ module.exports = {
 			{
 				test: /\.s[ac]ss$/i,
 				use: ["style-loader", "css-loader", "sass-loader"]
-			}
+			},
+			{
+				test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
+				type: 'asset/resource',
+			},
 		],
 	},
 	plugins: [
