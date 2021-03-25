@@ -43,8 +43,12 @@ module.exports = {
 				use: ["style-loader", "css-loader", "sass-loader"]
 			},
 			{
-				test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
+				test: /\.(woff|woff2|eot|ttf|otf)$/i,
 				type: 'asset/resource',
+			},
+			{
+				test: /\.(png|jpe?g|gif|svg)$/i,
+				loader: "file-loader",
 			},
 		],
 	},
