@@ -11,6 +11,11 @@ import Image from "Assets/Images/screen-test.png"
 
 const ProjectsPage: FunctionComponent = () =>
 {
+	const openGit = () =>
+	{
+		window.open("https://github.com/Ikonera/Blog_e2", "_blank")
+	}
+
 	return (
 		<section>
 			<Grid container justify="center" id="titleGrid">
@@ -19,7 +24,7 @@ const ProjectsPage: FunctionComponent = () =>
 			
 			<Grid container wrap="wrap" justify="center" style={{ gap: 45 }} className="cc">
 				<Grid container item className="projectPresentingGrid" xs={3} >
-					<Grid container item justify="space-between" alignItems="center">
+					<Grid container item justify="space-between" alignItems="center" className="projectGridHeader">
 						<h3>Blog e2</h3>
 						<img src={PhpLogo} alt="PHP Logo" className="languageLogo" />
 					</Grid>
@@ -36,7 +41,7 @@ const ProjectsPage: FunctionComponent = () =>
 							<Button color="primary">
 								Aller tester le site
 							</Button>
-							<Button color="primary">
+							<Button onClick={openGit} color="primary">
 								Le projet Git
 							</Button>
 						</Grid>

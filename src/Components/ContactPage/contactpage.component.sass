@@ -1,0 +1,91 @@
+@font-face
+	font-family: lato-reg
+	src: url("Assets/Fonts/Lato/Lato-Regular.ttf")
+@font-face
+	font-family: lato-light
+	src: url("Assets/Fonts/Lato/Lato-Light.ttf")
+
+*, ::before, ::after
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+#titleGrid
+	& > h2
+		margin: 2vh 0 2vh 0
+	margin-bottom: 4%
+
+.co
+	// border: 1px solid black
+	margin: 0 auto
+	width: 50%
+	form
+		width: 50%
+		margin: 0 auto
+	*
+		// border: 1px solid red
+
+#contactWays
+	margin-top: 5%
+	& img:hover
+		cursor: pointer
+
+
+.formContactDiv
+	position: relative
+	margin: 5vh 0 5vh 0
+
+
+.formContactLabel
+	padding: 1% 2%
+	position: absolute
+	left: 0
+	font-family: lato-reg
+	font-size: 17px
+	transition: all .3s ease
+	cursor: text
+
+.formContactInput
+	padding: 1% 2%
+	border-radius: 5px
+	background-color: #23252F
+	box-shadow: 5px 4px 5px black
+	outline: none
+	color: whitesmoke
+	font-family: lato-reg
+	font-size: 17px
+	&:focus
+		& ~ .formContactLabel
+			transition: all .3s ease
+			font-family: lato-reg
+			font-size: 14px
+			color: whitesmoke
+			transform: translateY(-100%)
+	&:valid
+		& ~ .formContactLabel
+			color: whitesmoke
+			font-family: lato-reg
+			font-size: 14px
+			transform: translateY(-100%)
+	&:invalid:not(:focus):empty
+		& ~ .formContactLabel
+			color: whitesmoke
+			font-family: lato-reg
+			font-size: 17px
+			transform: translateY(0)
+	&:invalid:not(:focus)
+		& ~ .formContactLabel
+			color: whitesmoke
+			font-family: lato-reg
+			font-size: 14px
+			transform: translateY(-100%)
+	&:invalid
+		& ~ .formContactLabel
+			color: whitesmoke
+			font-family: lato-reg
+			font-size: 14px
+			transform: translateY(-100%)
+
+#formContactMessage
+	resize: none
+	width: 100%
