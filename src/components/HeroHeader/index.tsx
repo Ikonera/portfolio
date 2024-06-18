@@ -9,21 +9,21 @@ const HeroHeader: FunctionComponent = () => {
 
 	return (
 		<div
-			class={`py-12 flex justify-around items-center ${themeValue == "light" ? "bg-slate-50" : "bg-[#1A1B26]"}`}
+			class={`w-full py-12 flex flex-col lg:flex-row justify-around items-center ${themeValue == "light" ? "bg-slate-50" : "bg-[#1A1B26]"}`}
 		>
 			<div class="h-max select-none">
 				<p
-					class={`font-display sm:text-2xl md:text-2xl lg:text-5xl ${themeValue == "light" ? "text-black" : "text-slate-200"}`}
+					class={`font-display text-5xl md:text-2xl lg:text-5xl ${themeValue == "light" ? "text-black" : "text-slate-200"}`}
 				>
 					Gabriel Millet
 				</p>
 				<Divider />
 				<p
-					class={`font-body text-center sm:text-lg md:text-base lg:text-2xl ${themeValue == "light" ? "text-black" : "text-slate-200"}`}
+					class={`font-body text-center text-xl md:text-base lg:text-2xl ${themeValue == "light" ? "text-black" : "text-slate-200"}`}
 				>
 					Site CV
 				</p>
-				<div class="container mx-auto w-max mt-4">
+				<div class="container mx-auto w-max mt-10">
 					<label class="inline-flex items-center cursor-pointer">
 						<input
 							type="checkbox"
@@ -46,7 +46,11 @@ const HeroHeader: FunctionComponent = () => {
 					</label>
 				</div>
 			</div>
-			<img src="/devops-illustration.svg" alt="hero-banner" class="w-1/2" />
+			<img
+				src="/devops-illustration.svg"
+				alt="hero-banner"
+				class="w-3/4 md:w-1/2 mt-14"
+			/>
 		</div>
 	);
 };

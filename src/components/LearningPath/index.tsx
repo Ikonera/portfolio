@@ -45,29 +45,28 @@ const LearningPath: FunctionComponent = () => {
 	return (
 		<div
 			id="learning-path"
-			class={`grid grid-cols-2 py-12 px-4 ${themeValue == "light" ? "bg-slate-50" : "bg-[#1A1B26]"}`}
+			class={`py-12 ${themeValue == "light" ? "bg-slate-50" : "bg-[#1A1B26]"}`}
 		>
-			<div>
-				{learningPaths.map((path: LearningPath, idx: number) => (
+			{learningPaths.map((path: LearningPath, idx: number) => (
+				<div key={idx}>
 					<FormationStep
 						title={path.title}
 						description={path.description}
 						duration={path.duration}
 						selected={selected == idx}
-						key={idx}
 						onClick={() => setSelected(idx)}
 					/>
-				))}
-			</div>
-			<div
-				class={`border rounded p-4 select-none shadow-md ${themeValue == "light" ? "bg-slate-200" : "bg-[#252736]"}`}
-			>
-				<p
-					class={`md:text-sm lg:text-lg ${themeValue == "light" ? "text-black" : "text-slate-200"}`}
-				>
-					{learningPaths[selected].text}
-				</p>
-			</div>
+					<div
+						class={`container mx-auto w-11/12 border rounded p-4 mb-6 select-none shadow-md ${themeValue == "light" ? "bg-slate-200" : "bg-[#252736]"} ${idx != selected && "hidden"}`}
+					>
+						<p
+							class={`md:text-sm lg:text-lg ${themeValue == "light" ? "text-black" : "text-slate-200"}`}
+						>
+							{path.text}
+						</p>
+					</div>
+				</div>
+			))}
 		</div>
 	);
 };

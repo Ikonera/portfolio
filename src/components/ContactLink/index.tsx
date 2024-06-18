@@ -18,9 +18,9 @@ const ContactLink: FunctionComponent<{
 		<a
 			href={link}
 			target="_blank"
-			class={`mx-3 md:text-sm lg:text-base ${colorVariants[color]} w-max flex items-center sm:my-4 px-3 rounded-full py-1 font-display hover:underline`}
+			class={`mx-3 text-xl md:text-sm lg:text-base ${colorVariants[color]} w-max flex items-center my-4 px-3 rounded-full py-1 font-display hover:underline`}
 		>
-			<img src={imageSrc} alt="Image link" class="sm:w-6 md:w-4 lg:w-6 mr-2" />
+			<img src={imageSrc} alt="Image link" class="md:w-4 lg:w-6 mr-2 w-7" />
 			{text}
 		</a>
 	);

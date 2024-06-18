@@ -6,14 +6,14 @@ import { Projects } from "./components/Projects";
 import { Technologies } from "./components/Technologies";
 
 export function App() {
-  return (
-    <>
-      <HeroHeader />
-      <LearningPath />
-      <Technologies />
-      <Missions />
-      <Projects />
-      <ContactLine />
-    </>
-  );
+	return (
+		<>
+			<HeroHeader />
+			<LearningPath />
+			<Technologies />
+			<Missions />
+			<Projects />
+			<ContactLine />
+		</>
+	);
 }

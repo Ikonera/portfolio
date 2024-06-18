@@ -9,7 +9,7 @@ const ContactLine: FunctionComponent = () => {
 		<>
 			<div
 				id="contacts"
-				class={`flex sm:flex-col sm:items-center md:flex-row justify-center py-12 ${themeValue == "light" ? "bg-slate-50" : "bg-[#1A1B26]"}`}
+				class={`w-full flex flex-col items-center md:flex-row justify-center py-12 ${themeValue == "light" ? "bg-slate-50" : "bg-[#1A1B26]"}`}
 			>
 				<ContactLink
 					text="Gabriel Millet"

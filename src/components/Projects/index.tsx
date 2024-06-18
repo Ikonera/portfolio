@@ -24,9 +24,9 @@ const Projects: FunctionComponent = () => {
 	return (
 		<div
 			id="projects"
-			class={`py-12 ${themeValue == "light" ? "bg-slate-200" : "bg-[#252736]"}`}
+			class={`w-full py-12 ${themeValue == "light" ? "bg-slate-200" : "bg-[#252736]"}`}
 		>
-			<div class="container w-max mx-auto grid sm:grid-cols-1 sm:gap-y-6 md:grid-cols-3 lg:grid-cols-3 md:gap-x-16 md:gap-y-8 lg:gap-x-8 lg:gap-y-4 ">
+			<div class="grid grid-cols-1 gap-y-6 md:grid-cols-3 lg:grid-cols-3 md:gap-x-16 md:gap-y-8 lg:gap-x-8 lg:gap-y-4 ">
 				{projects.map(({ title, description, img, link }: Project) => (
 					<ProjectGrid
 						title={title}
