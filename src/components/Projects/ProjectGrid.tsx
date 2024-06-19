@@ -13,6 +13,7 @@ const ProjectGrid: FunctionComponent<Project> = ({
 	title,
 	description,
 	link,
+	img,
 }) => {
 	const themeValue = useAtomValue(themeAtom);
 	return (
@@ -31,7 +32,7 @@ const ProjectGrid: FunctionComponent<Project> = ({
 			>
 				{description}
 			</p>
-			<img class="aspect-video rounded-lg" src="/devops-illustration.svg" />
+			<img class="aspect-video" src={img} />
 		</div>
 	);
 };

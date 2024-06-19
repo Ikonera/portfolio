@@ -8,13 +8,13 @@ const projects: Project[] = [
 		title: "Terakube",
 		description:
 			"Déployer un cluster Kubernetes automatisé avec Terraform et Ansible.",
-		img: "",
+		img: "/Terakube.svg",
 		link: "https://www.github.com/ikovops/terakube",
 	},
 	{
 		title: "AnsibleDTF",
 		description: "Automatisation de mes dotfiles Linux et MacOS avec Ansible.",
-		img: "",
+		img: "/AnsibleDTF.svg",
 		link: "https://www.github.com/ikovops/ansible_dtf",
 	},
 ];
