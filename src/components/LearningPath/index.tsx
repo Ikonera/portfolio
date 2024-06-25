@@ -21,19 +21,19 @@ const learningPaths: LearningPath[] = [
 	{
 		title: "Etudes",
 		description: "Mon cursus en études supérieures.",
-		text: "In tincidunt enim gravida enim molestie rutrum. Curabitur eu sapien vel lacus commodo ullamcorper non non eros. Sed tincidunt tincidunt libero, eget condimentum odio auctor id. Donec dignissim orci et arcu mollis finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus convallis dui non rhoncus iaculis. Proin nec est purus. Etiam interdum nisi libero, a sollicitudin purus tempus a. Nullam a dolor quis nibh blandit pharetra. Curabitur gravida volutpat dui eu placerat. Pellentesque dignissim ligula eu nunc malesuada, id eleifend libero finibus. Donec iaculis condimentum erat. Aliquam feugiat commodo massa, in vulputate purus pharetra vel. Fusce quam felis, sodales mattis risus sagittis, fermentum pharetra nunc. Nunc pellentesque elit at lorem accumsan cursus. Praesent quis lacus lobortis, pharetra erat non, dapibus sem.",
+		text: "J'ai débuté mon parcours à l'ESTIAM en Octobre 2019. Durant ces quatre années d'études j'ai pu renforcer mes compétences en développement web et mobile, architecture logicielle et pratiques en entreprise au travers de différents projets, ce qui m'a énormément apporté pour mon alternance.",
 		duration: "4 ans",
 	},
 	{
 		title: "Alternance",
 		description: "Mon alternance au sein de 42c.",
-		text: "In tincidunt enim gravida enim molestie rutrum. Curabitur eu sapien vel lacus commodo ullamcorper non non eros. Sed tincidunt tincidunt libero, eget condimentum odio auctor id. Donec dignissim orci et arcu mollis finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus convallis dui non rhoncus iaculis. Proin nec est purus. Etiam interdum nisi libero, a sollicitudin purus tempus a. Nullam a dolor quis nibh blandit pharetra. Curabitur gravida volutpat dui eu placerat. Pellentesque dignissim ligula eu nunc malesuada, id eleifend libero finibus. Donec iaculis condimentum erat. Aliquam feugiat commodo massa, in vulputate purus pharetra vel. Fusce quam felis, sodales mattis risus sagittis, fermentum pharetra nunc. Nunc pellentesque elit at lorem accumsan cursus. Praesent quis lacus lobortis, pharetra erat non, dapibus sem.",
+		text: "Rattaché au pôle 42c-Lab, j'ai pu contribuer à de nombreux projets pour des clients du secteur des médias et audiovisuel, parmis lesquels je peux citer la Popup Channel By... et Pix.T, mais aussi des projets internes comme l'élaboration d'une documentation technique sur la conteneurisation avec Docker et Kubernetes destinée à la montée en compétence de l'équipe du Lab, le Backoffice IT pour la simplification des tâches d'administration Windows Active Directory, ou encore ChimeToRTMPS, un POC sur la sortie RTMPS du service AWS Chime.",
 		duration: "3 ans",
 	},
 	{
 		title: "Formation EQL DevOps",
 		description: "Trois mois intense au sein de l'Ecole de Qualité Logicielle.",
-		text: "In tincidunt enim gravida enim molestie rutrum. Curabitur eu sapien vel lacus commodo ullamcorper non non eros. Sed tincidunt tincidunt libero, eget condimentum odio auctor id. Donec dignissim orci et arcu mollis finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus convallis dui non rhoncus iaculis. Proin nec est purus. Etiam interdum nisi libero, a sollicitudin purus tempus a. Nullam a dolor quis nibh blandit pharetra. Curabitur gravida volutpat dui eu placerat. Pellentesque dignissim ligula eu nunc malesuada, id eleifend libero finibus. Donec iaculis condimentum erat. Aliquam feugiat commodo massa, in vulputate purus pharetra vel. Fusce quam felis, sodales mattis risus sagittis, fermentum pharetra nunc. Nunc pellentesque elit at lorem accumsan cursus. Praesent quis lacus lobortis, pharetra erat non, dapibus sem.",
+		text: "Actualisation : 10 Août 2024.",
 		duration: "3 mois",
 	},
 ];
